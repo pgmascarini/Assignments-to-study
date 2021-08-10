@@ -1,9 +1,6 @@
-import './App.css';
-import Header from './components/commons/Header';
-import Aboutme from './components/pages/Aboutme';
-import Contact from './components/pages/Contact';
+import Header from './components/commons/header/Header';
 import Home from './components/pages/Home';
-import Footer from './components/commons/Footer';
+import Footer from './components/commons/footer/Footer';
 import Notfound from './components/pages/Notfound';
 import {
   BrowserRouter as Router,
@@ -16,15 +13,9 @@ const App = () => {
   return (
     <Router>
 
-      <Header></Header>
+      <Header />
 
       <Switch>
-        <Route path="/aboutme">
-          <Aboutme />
-        </Route>
-        <Route path="/contato">
-          <Contact />
-        </Route>
         <Route exact path="/">
           <Home />
         </Route>
@@ -33,7 +24,7 @@ const App = () => {
         </Route>
       </Switch>
 
-      <Footer></Footer>
+      <Footer />
 
     </Router>
   );

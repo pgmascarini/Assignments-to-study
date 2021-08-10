@@ -1,7 +1,9 @@
+import Menu from "../menu/Menu"
+
 const Footer = () => {
     return (
         <footer>
-        Criado em 2021.
+            <Menu />
         </footer>
     );
 }

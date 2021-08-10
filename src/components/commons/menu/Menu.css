@@ -1,0 +1,28 @@
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  opacity: 0.7;
+}
+
+.navigation li {
+  list-style-type: none;
+  padding: 4px 0;
+}
+
+.horizontal li {
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.navColor {
+    color: #000000 !important;
+}
+
+/*  OU    .horizontal li.hide */
