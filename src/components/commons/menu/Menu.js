@@ -20,7 +20,11 @@ const Menu = ({ navHorizontal, hideHome, colorMobile }) => {
                 <li>
                     <Link className={colorMobile ? 'navColor' : ''} to="/private">Private area</Link>
                 </li>
-
+            </ul>
+            <ul className="hamburguer">
+                <li>
+                    <button className="button-link">Menu</button>
+                </li>
             </ul>
         </nav>
     );

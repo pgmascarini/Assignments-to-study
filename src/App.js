@@ -2,12 +2,7 @@ import Header from './components/commons/header/Header';
 import Home from './components/pages/Home';
 import Footer from './components/commons/footer/Footer';
 import Notfound from './components/pages/Notfound';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   return (
