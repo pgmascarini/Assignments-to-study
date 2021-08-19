@@ -1,0 +1,31 @@
+.card {
+  box-shadow: 0px 1px 5px #888888;
+ 
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+    font-size: 24px;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.card-position {
+    position: relative;
+}
+
+.card button {
+    border-radius: 50%;
+    background-color: #ff0000;
+    border: none;
+    padding: 3px 11px;
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+}

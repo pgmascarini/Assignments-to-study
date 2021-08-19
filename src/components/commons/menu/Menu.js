@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
 import "./Menu.css"
 
 const Menu = ({ navHorizontal, hideHome, colorMobile }) => {
@@ -6,19 +6,19 @@ const Menu = ({ navHorizontal, hideHome, colorMobile }) => {
         <nav className="navigation">
             <ul className={navHorizontal ? 'horizontal' : ''}>
                 <li className={hideHome ? 'hide' : ''}>
-                    <Link className={colorMobile ? 'navColor' : ''} to="/">Home</Link>
+                    <HashLink className={colorMobile ? 'navColor' : ''} to="/">Home</HashLink>
                 </li>
                 <li>
-                    <Link className={colorMobile ? 'navColor' : ''} to="/#courses">Our Courses</Link>
+                    <HashLink className={colorMobile ? 'navColor' : ''} to="/#courses">Our Courses</HashLink>
                 </li>
                 <li>
-                    <Link className={colorMobile ? 'navColor' : ''} to="/#teachers">Our teachers</Link>
+                    <HashLink className={colorMobile ? 'navColor' : ''} to="/#teachers">Our teachers</HashLink>
                 </li>
                 <li>
-                    <Link className={colorMobile ? 'navColor' : ''} to="#students">Our Students</Link>
+                    <HashLink className={colorMobile ? 'navColor' : ''} to="#students">Our Students</HashLink>
                 </li>
                 <li>
-                    <Link className={colorMobile ? 'navColor' : ''} to="/private">Private area</Link>
+                    <HashLink className={colorMobile ? 'navColor' : ''} to="/private">Private area</HashLink>
                 </li>
             </ul>
             <ul className="hamburguer">

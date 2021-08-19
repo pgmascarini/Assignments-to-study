@@ -1,0 +1,13 @@
+.course-item {
+    text-align: center;
+    padding: 0 15px;
+
+}
+
+.course-item h3 {
+    border-bottom: 1px solid #999999;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0;
+}

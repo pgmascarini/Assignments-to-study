@@ -3,6 +3,7 @@ import Menu from "../menu/Menu"
 import "./Footer.css"
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <footer>
             <nav className="nav-footer">
@@ -21,7 +22,7 @@ const Footer = () => {
 
             <div className="footer">
                 <div className="centralizer">
-                    <smal>&copy; 2021 All rights reserved.</smal>
+                    <small>&copy; {currentYear} All rights reserved.</small>
                 </div>
             </div>
         </footer>
