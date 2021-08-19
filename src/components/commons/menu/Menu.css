@@ -30,26 +30,8 @@
     color: #000000 !important;
 }
 
-/*  OU    .horizontal li.hide */
-
-.hamburguer {
-  display: none;
-}
-
 @media (max-width: 650px) {
   .horizontal {
     display: none;
-  }
-
-  .hamburguer {
-    display: block;
-  }
-
-  .button-link {
-    background-color: transparent;
-    color: #ffffff;
-    border: none;
-    padding: 0;
-    font-size: 20px;
   }
 }

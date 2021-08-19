@@ -15,15 +15,10 @@ const Menu = ({ navHorizontal, hideHome, colorMobile }) => {
                     <HashLink className={colorMobile ? 'navColor' : ''} to="/#teachers">Our teachers</HashLink>
                 </li>
                 <li>
-                    <HashLink className={colorMobile ? 'navColor' : ''} to="#students">Our Students</HashLink>
+                    <HashLink className={colorMobile ? 'navColor' : ''} to="/#students">Our Students</HashLink>
                 </li>
                 <li>
                     <HashLink className={colorMobile ? 'navColor' : ''} to="/private">Private area</HashLink>
-                </li>
-            </ul>
-            <ul className="hamburguer">
-                <li>
-                    <button className="button-link">Menu</button>
                 </li>
             </ul>
         </nav>

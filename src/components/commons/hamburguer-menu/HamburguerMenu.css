@@ -1,0 +1,43 @@
+.hamburguer {
+  display: none;
+}
+
+.pop-up {
+    display: none;
+}
+
+@media (max-width: 650px) {
+  .hamburguer {
+    display: inline-block;
+  }
+
+  .button-link {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .show-pop-up {
+      display: inline-block;
+  }
+
+  .hide-pop-up {
+      display: none;
+  }
+
+  .pop-up {
+    width: 90%;
+    margin: 5%;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+  }
+}

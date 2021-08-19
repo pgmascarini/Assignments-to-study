@@ -1,3 +1,4 @@
+import HamburguerMenu from "../hamburguer-menu/HamburguerMenu";
 import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
 import "./Header.css";
@@ -11,6 +12,7 @@ const Header = () => {
                 </div>
                 <div className="col-9 text-right">
                     <Menu navHorizontal={true} hideHome={true} />
+                    <HamburguerMenu />
                 </div>
             </div>
         </header>
