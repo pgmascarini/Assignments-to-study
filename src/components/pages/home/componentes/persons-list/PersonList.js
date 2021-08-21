@@ -9,10 +9,10 @@ const PersonList = ({ lista }) => {
     return (
         <div className="row">
             {
-                lista.map(({ picture, name}) => {
+                lista.map((pessoa) => {
                     return (
-                        <div key={name.first} className="col-3">
-                            <PersonItem fotoCard={picture} nameCard={name} />
+                        <div key={pessoa.name.first} className="col-3">
+                            <PersonItem pessoaInfo={pessoa} />
                         </div>
                     )
                 })
