@@ -2,7 +2,7 @@ import Logo from "../logo/Logo"
 import Menu from "../menu/Menu"
 import "./Footer.css"
 
-const Footer = () => {
+const Footer = (estaLogado, mudarEstadoLogado) => {
     const currentYear = new Date().getFullYear();
     return (
         <footer>
@@ -15,7 +15,7 @@ const Footer = () => {
 
                     <div className="col-4">
                         <h2>Site Map</h2>
-                        <Menu />
+                        <Menu estaLogado={estaLogado} mudarEstadoLogado={mudarEstadoLogado} />
                     </div>
                 </div>
             </nav>

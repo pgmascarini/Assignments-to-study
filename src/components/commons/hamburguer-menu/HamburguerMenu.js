@@ -3,7 +3,7 @@ import { useState } from "react";
 import Menu from "../menu/Menu";
 import "./HamburguerMenu.css";
 
-const HamburguerMenu = () => {
+const HamburguerMenu = ({estaLogado, mudarEstadoLogado}) => {
 
     const [state, setstate] = useState('hide-pop-up');
     const [state2, setstate2] = useState('show-pop-up');
@@ -25,7 +25,7 @@ const HamburguerMenu = () => {
                 </li>
             </ul>
             <div className={`pop-up ${state}`} onClick={fecharPopUp}>
-                <Menu colorMobile={true} />
+                <Menu estaLogado={estaLogado} mudarEstadoLogado={mudarEstadoLogado} colorMobile={true} />
             </div>
         </>
     );

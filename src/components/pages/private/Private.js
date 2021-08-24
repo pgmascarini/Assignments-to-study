@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Error from "../../commons/error/Error";
 import "./Private.css";
+import { Redirect } from "react-router-dom";
 
-const Private = () => {
+const Private = ({ mudarEstadoLogado, estaLogado }) => {
     const [usernameState, setUsernameState] = useState('')
     const [passwordState, setPasswordState] = useState('')
     const [errorState, setErrorState] = useState(false)
@@ -27,11 +28,16 @@ const Private = () => {
                 });
 
                 if (user) {
-                    alert ('user found')
+                    mudarEstadoLogado(true)
                 } else {
                     setErrorState(true)
+                    mudarEstadoLogado(false)
                 }
             })
+    }
+
+    if (estaLogado) {
+        return (<Redirect to="/private/estudantes" />)
     }
 
     return (

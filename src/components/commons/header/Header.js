@@ -3,7 +3,7 @@ import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ estaLogado, mudarEstadoLogado }) => {
     return (
         <header className="header">
             <div className="centralizer">
@@ -11,8 +11,8 @@ const Header = () => {
                     <Logo />
                 </div>
                 <div className="col-9 text-right">
-                    <Menu navHorizontal={true} hideHome={true} />
-                    <HamburguerMenu />
+                    <Menu navHorizontal={true} hideHome={true} estaLogado={estaLogado} mudarEstadoLogado={mudarEstadoLogado} />
+                    <HamburguerMenu estaLogado={estaLogado} mudarEstadoLogado={mudarEstadoLogado} />
                 </div>
             </div>
         </header>
