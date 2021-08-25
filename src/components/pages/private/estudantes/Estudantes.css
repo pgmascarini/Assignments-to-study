@@ -1,0 +1,45 @@
+.students label,
+.students input,
+.students select {
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+}
+
+.students .col-4 {
+  padding: 10px;
+}
+
+.students table {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.students th {
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+  text-align: left;
+  padding: 10px;
+}
+
+.students button {
+  background: none;
+  padding: 5px 10px;
+  border: 1px solid #999999;
+  cursor: pointer;
+}
+
+.students th:last-child,
+.students td:last-child {
+  text-align: center;
+  width: 70px;
+}
+
+.students td {
+  border-bottom: 1px solid #999999;
+  padding: 10px;
+}
+
+.students tr:last-child td {
+    border: none;
+}
